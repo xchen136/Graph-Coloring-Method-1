@@ -11,4 +11,8 @@ Output#1 (argv[2]): Prints
 4. the final adjacencyMatrix with the assign colors in the diagonal of the matrix
 
 Method#1:
-Take a new color and color all possible nodes. When all possible nodes are colored with this particular color, then it repeats this whole process until all nodes are colored.
+Take one color and color all possible nodes, then add a new color when run out of choices. Repeat until all nodes are colored.
+
+
+Method#2:
+Color each node with existing "used colors" if possible, else add a new color. Repeat until all nodes are colored.
